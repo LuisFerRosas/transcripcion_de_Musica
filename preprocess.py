@@ -47,7 +47,7 @@ def collate_fn_nuevo(batch):
         partitura = [i for i,_ in sorted(zip(partitura, partitura_length), key=lambda x: x[1], reverse=True)]
         partitura = _prepare_data(partitura).astype(np.int32)
         
-        return t.LongTensor(partitura),t.LongTensor(mfcc),t.LongTensor(partitura_length)
+        return t.LongTensor(partitura),t.Tensor(mfcc),t.LongTensor(partitura_length)
 
 
 def _pad_data(x, length):
