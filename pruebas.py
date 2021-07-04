@@ -1,3 +1,4 @@
+from numpy import dtype
 from network import TokenEmbedding
 import os
 import torch
@@ -21,12 +22,12 @@ if __name__ == '__main__':
         partitura_tokenizada,wave_mfcc,len_partitura = data
        
         print("partitura_ tokenizada //////////////// dimencion : "+str(partitura_tokenizada.shape))
-        # print(partitura_tokenizada)
+        print(partitura_tokenizada.type())
        
         print("wave_mfcc //////////////// dimencion: "+str(wave_mfcc.shape))
-        print(wave_mfcc)
+        print(wave_mfcc.type())
         print("len paritura //////////////// dimencion: "+str(len_partitura.shape))
-        # print(len_partitura)
+        print(len_partitura.type())
         break
     # for i, data in enumerate(pbar):
         

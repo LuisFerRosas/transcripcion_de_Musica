@@ -130,9 +130,9 @@ if __name__ == '__main__':
     #     np.save(f, wave)
     #     np.save(f,nombre)
    
-    with open('archivosnumpy/valid_audio_nombre.npy', 'rb') as f:
-        wave = np.load(f) 
-        nombres = np.load(f)
-        
-    print(wave.shape)
-    print(len(nombres))
+    # with open('archivosnumpy/valid_audio_nombre.npy', 'rb') as f:
+    #     wave = np.load(f) 
+    #     nombres = np.load(f)
+    pass
+    # print(wave.shape)
+    # print(len(nombres))
