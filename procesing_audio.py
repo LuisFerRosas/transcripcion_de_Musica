@@ -101,8 +101,8 @@ def cargarArchivosNPY(path):
         wave = np.load(f) 
         nombres = np.load(f)
         
-    print(wave.shape)
-    print(len(nombres))
+    # print(wave.shape)
+    # print(len(nombres))
     return wave,nombres
 
 
